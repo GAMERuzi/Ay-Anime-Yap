@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AY – Anime Yap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>AY <small>(Anime Yap)</small></h1>
+    </header>
+
+    <section id="form-section">
+      <div class="form-row">
+        <label>Bölüm Süresi (dk):</label>
+        <input type="number" id="duration" min="1" placeholder="10" />
+      </div>
+      <div class="form-row">
+        <label>Olaylar:</label>
+        <textarea id="events" placeholder="Karakter A…"></textarea>
+      </div>
+      <div class="form-row">
+        <label>Karakter Resimleri (max 50):</label>
+        <input type="file" id="images" accept="image/*" multiple />
+      </div>
+      <div class="form-row">
+        <label>Ses (25 kız + 25 erkek):</label>
+        <select id="voiceSelect"></select>
+      </div>
+      <div class="form-row buttons">
+        <button id="generateBtn">Oluştur</button>
+      </div>
+    </section>
+
+    <section id="preview-section" class="hidden">
+      <h2>Önizleme</h2>
+      <div id="preview-area"></div>
+      <button id="exportMP4Btn">MP4 İndir</button>
+      <button id="exportGIFBtn">GIF İndir</button>
+    </section>
+  </div>
+
+  <audio id="bgMusic" src="assets/audio/background.mp3" loop autoplay></audio>
+
+  <script src="app.js"></script>
+  <script src="export.js"></script>
+</body>
+</html>
