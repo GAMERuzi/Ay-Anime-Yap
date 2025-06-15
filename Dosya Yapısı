@@ -1,0 +1,12 @@
+ay-anime-yap/
+├── index.html
+├── style.css
+├── app.js
+├── export.js
+└── assets/
+    ├── audio/
+    │   └── background.mp3
+    └── voices/
+        ├── kiz1.mp3
+        ├── ...
+        └── erkek50.mp3
